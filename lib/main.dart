@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:furmeet_test/my_app.dart';
 
 void main() {
   runApp(const MyApp());
 }
+
+/*
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -69,3 +72,5 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+*/
