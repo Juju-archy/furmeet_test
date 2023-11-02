@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:furmeet_test/page/connexion_page/login_success.dart';
+import 'package:furmeet_test/widgets/function.dart';
 
 /*
 Login Page
@@ -31,8 +33,12 @@ class _LoginPageState extends State<LoginPage> {
     return GestureDetector(
         onTap: (() => FocusScope.of(context).requestFocus(FocusNode())),
         child: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+            title: Text('Accueil'),
+          ),
           body: SingleChildScrollView(
-            padding: EdgeInsets.all(40.0),
+            padding: EdgeInsets.all(20.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -98,6 +104,9 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: (){
                     setState(() {
                       //chemin vers page Hello (voir feuille connexion)
+                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
+                        return LoginSuccess();
+                      }));
                     });
                   },
                   child: Text('Connexion',  style: TextStyle(color: Colors.white, fontSize: 25),),
@@ -109,7 +118,6 @@ class _LoginPageState extends State<LoginPage> {
                           color: Colors.pink
                       )
                   ),
-
                 ),
                 padding(10),
                 ElevatedButton(
@@ -153,10 +161,6 @@ class _LoginPageState extends State<LoginPage> {
           ),
         )
     );
-  }
-
-  Padding padding(double top){
-    return Padding(padding: EdgeInsets.only(top: top));
   }
 
 }

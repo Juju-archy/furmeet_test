@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:furmeet_test/home.dart';
+import 'package:furmeet_test/page/home.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Fur Meet',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.pinkAccent),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Fur Meet'),
