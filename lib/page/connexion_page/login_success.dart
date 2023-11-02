@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:furmeet_test/page/home.dart';
 import 'package:furmeet_test/widgets/function.dart';
+import 'package:furmeet_test/page/profil/profil_user.dart';
 
 class LoginSuccess extends StatefulWidget {
   @override
@@ -76,7 +77,7 @@ class _LoginSuccessState extends State<LoginSuccess> {
                       onPressed: (){
                         setState(() {
                           Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
-                            return LoginSuccess();
+                            return ProfilUSer();
                           }));
                         });
                       },
