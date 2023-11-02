@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:furmeet_test/page/home.dart';
 import 'package:furmeet_test/widgets/function.dart';
 
 class LoginSuccess extends StatefulWidget {
@@ -25,6 +26,7 @@ class _LoginSuccessState extends State<LoginSuccess> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              padding(100.0),
               Container(
                 height: taille,
                 width: taille,
@@ -43,7 +45,54 @@ class _LoginSuccessState extends State<LoginSuccess> {
                 ),
               ),
               padding(20.0),
-              textWithStyle('Hello Archy!', color: Colors.redAccent)
+              textWithStyle('Bienvenue Archy!', color: Colors.redAccent, fontSize: 40.0),
+              Container(
+                height: taille,
+                width: taille,
+                child: Column(
+                  //Profile / Accueil
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    padding(20.0),
+                    ElevatedButton(
+                        onPressed: (){
+                          setState(() {
+                            Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                              return MyHomePage(title: 'Archy',);
+                            }));
+                          });
+                    },
+                        child: textWithStyle('Accueil', fontSize: 30.0, color: Colors.white),
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.pinkAccent,
+                          fixedSize: const Size(300, 50),
+                          side: const BorderSide(
+                              width: 2,
+                              color: Colors.pinkAccent
+                          )
+                      ),
+                    ),
+                    ElevatedButton(
+                      onPressed: (){
+                        setState(() {
+                          Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                            return LoginSuccess();
+                          }));
+                        });
+                      },
+                      child: textWithStyle('Profile', fontSize: 30.0, color: Colors.white),
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.pinkAccent,
+                          fixedSize: const Size(300, 50),
+                          side: const BorderSide(
+                              width: 2,
+                              color: Colors.pinkAccent
+                          )
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
