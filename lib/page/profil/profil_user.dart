@@ -32,7 +32,7 @@ class _ProfilUserState extends State<ProfilUSer> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         textWithStyle('Archy', color: Colors.pinkAccent, fontSize: 30.0),
-                        textWithStyle('29 ans', color: Colors.pinkAccent, fontSize: 20.0, fontStyle: FontStyle.italic)
+                        textWithStyle('29 ans, Toulouse', color: Colors.pinkAccent, fontSize: 20.0, fontStyle: FontStyle.italic)
                       ],
                     ),
                   ),
@@ -101,7 +101,181 @@ class _ProfilUserState extends State<ProfilUSer> {
               ),
               padding(20),
               textWithStyle('Mes meetups', color: Colors.pinkAccent, fontSize: 30.0),
+              Card(
+                elevation: 10,
+                shadowColor: Colors.pinkAccent,
+                child: SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  child: Column(
+                    children: [
+                      InkWell(
+                        onTap: (){
 
+                        },
+                        child: Card(
+                            elevation: 5,
+                            shadowColor: Colors.red,
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('Archy', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('Toulouse', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 4,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('14/12/2023', color: Colors.pinkAccent),
+                                        textWithStyle('17h', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
+                        ),
+                      ),
+                      InkWell(
+                        onTap: (){
+
+                        },
+                        child: Card(
+                            elevation: 5,
+                            shadowColor: Colors.red,
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('Archy', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('Toulouse', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 4,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('14/12/2023', color: Colors.pinkAccent),
+                                        textWithStyle('17h', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
+                        ),
+                      ),
+                      InkWell(
+                        onTap: (){
+
+                        },
+                        child: Card(
+                            elevation: 5,
+                            shadowColor: Colors.red,
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('Archy', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('Toulouse', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 4,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('14/12/2023', color: Colors.pinkAccent),
+                                        textWithStyle('17h', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
+                        ),
+                      ),
+                      InkWell(
+                        onTap: (){
+
+                        },
+                        child: Card(
+                            elevation: 5,
+                            shadowColor: Colors.red,
+                            child: Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('Archy', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 3,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('Toulouse', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 4,
+                                    child: Column(
+                                      children: [
+                                        textWithStyle('14/12/2023', color: Colors.pinkAccent),
+                                        textWithStyle('17h', color: Colors.pinkAccent)
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              )
             ],
           ),
         ),
