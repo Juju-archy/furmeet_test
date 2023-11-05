@@ -32,7 +32,23 @@ class _ProfilUserState extends State<ProfilUSer> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         textWithStyle('Archy', color: Colors.pinkAccent, fontSize: 30.0),
-                        textWithStyle('29 ans, Toulouse', color: Colors.pinkAccent, fontSize: 20.0, fontStyle: FontStyle.italic)
+                        textWithStyle('29 ans, Toulouse', color: Colors.pinkAccent, fontSize: 20.0, fontStyle: FontStyle.italic),
+                        ElevatedButton(
+                          onPressed: (){
+                            setState(() {
+
+                            });
+                          },
+                          child: Text('Modifier',  style: TextStyle(color: Colors.white, fontSize: 15),),
+                          style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.pinkAccent,
+                              fixedSize: const Size(150, 30),
+                              side: const BorderSide(
+                                  width: 2,
+                                  color: Colors.pink
+                              )
+                          ),
+                        ),
                       ],
                     ),
                   ),
