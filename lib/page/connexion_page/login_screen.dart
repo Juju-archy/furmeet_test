@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:furmeet_test/page/connexion_page/login_success.dart';
+import 'package:furmeet_test/widgets/drawer.dart';
 import 'package:furmeet_test/widgets/function.dart';
 
 /*
@@ -35,8 +36,9 @@ class _LoginPageState extends State<LoginPage> {
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-            title: Text('Accueil'),
+            title: Text('Connexion'),
           ),
+          drawer: MyDrawer(),
           body: SingleChildScrollView(
             padding: EdgeInsets.all(20.0),
             child: Column(
