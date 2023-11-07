@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:furmeet_test/page/home.dart';
 
 
 class MyDrawer extends StatelessWidget {
@@ -14,22 +15,25 @@ class MyDrawer extends StatelessWidget {
         children: [
           const DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Color.fromRGBO(100, 78, 64, 100.0),
             ),
-            child: Text('Drawer Header'),
+            child: Text('Fur Meet'),
           ),
           ListTile(
-            title: const Text('Home'),
+            title: const Text('Accueil'),
           //selected: _selectedIndex == 0,
             onTap: () {
           // Update the state of the app
+              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                return MyHomePage(title: 'Accueil',);
+              }));
           //_onItemTapped(0);
           // Then close the drawer
-              Navigator.pop(context);
+              //Navigator.pop(context);
             },
           ),
           ListTile(
-            title: const Text('Business'),
+            title: const Text('Meetup'),
             //selected: _selectedIndex == 1,
             onTap: () {
             // Update the state of the app
@@ -39,7 +43,7 @@ class MyDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            title: const Text('School'),
+            title: const Text('Profil'),
             //selected: _selectedIndex == 2,
             onTap: () {
             // Update the state of the app

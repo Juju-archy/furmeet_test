@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:furmeet_test/page/home.dart';
 import 'package:furmeet_test/widgets/function.dart';
 import 'package:furmeet_test/page/profil/profil_user.dart';
+import 'package:furmeet_test/widgets/drawer.dart';
 
 class LoginSuccess extends StatefulWidget {
   @override
@@ -15,12 +16,13 @@ class _LoginSuccessState extends State<LoginSuccess> {
     double taille = MediaQuery.of(context).size.width * 0.5;
 
     return GestureDetector(
-      onTap: (() => FocusScope.of(context).requestFocus(FocusNode())),
+      //onTap: (() => FocusScope.of(context).requestFocus(FocusNode())),
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text('Connexion réussie !'),
         ),
+        drawer: MyDrawer(),
         body: SingleChildScrollView(
           padding: EdgeInsets.all(20.0),
           child: Column(
@@ -63,14 +65,15 @@ class _LoginSuccessState extends State<LoginSuccess> {
                             }));
                           });
                     },
-                        child: textWithStyle('Accueil', fontSize: 30.0, color: Colors.white),
+                      child: textWithStyle('Accueil', fontSize: 30.0, color: Colors.white),
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.pinkAccent,
-                          fixedSize: const Size(300, 50),
-                          side: const BorderSide(
-                              width: 2,
-                              color: Colors.pinkAccent
-                          )
+                        elevation: 10.0,
+                        backgroundColor: Colors.pinkAccent,
+                        fixedSize: const Size(300, 50),
+                        side: const BorderSide(
+                            width: 2,
+                            color: Colors.pinkAccent
+                        ),
                       ),
                     ),
                     ElevatedButton(
@@ -83,12 +86,13 @@ class _LoginSuccessState extends State<LoginSuccess> {
                       },
                       child: textWithStyle('Profile', fontSize: 30.0, color: Colors.white),
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.pinkAccent,
-                          fixedSize: const Size(300, 50),
-                          side: const BorderSide(
-                              width: 2,
-                              color: Colors.pinkAccent
-                          )
+                        elevation: 10.0,
+                        backgroundColor: Colors.pinkAccent,
+                        fixedSize: const Size(300, 50),
+                        side: const BorderSide(
+                            width: 2,
+                            color: Colors.pinkAccent
+                        ),
                       ),
                     ),
                   ],

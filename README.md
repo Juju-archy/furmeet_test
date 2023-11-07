@@ -6,4 +6,4 @@ Application d'organisation d'évènement
 
 //   graphisme  
 Page de connexion OK  
-Page de validation de connexion OK   
+Page de validation de connexion OK

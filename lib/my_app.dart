@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Fur Meet',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.orangeAccent),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromRGBO(100, 78, 64, 100.0)),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Fur Meet'),
