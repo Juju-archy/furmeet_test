@@ -23,6 +23,7 @@ class _ProfileUpdateState extends State<ProfileUpdate> {
           title: Text('Modifier profil'),
         ),
         body: ListView(
+          //https://github.com/JohannesMilke/user_profile_ii_example/blob/master/lib/model/user.dart => utilisation profil
           //padding: EdgeInsets.all(25.0),
           padding: EdgeInsets.symmetric(horizontal: 32),
           physics: BouncingScrollPhysics(),
