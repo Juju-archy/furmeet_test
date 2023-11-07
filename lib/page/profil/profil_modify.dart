@@ -3,7 +3,7 @@ import 'package:furmeet_test/widgets/profile_widget.dart';
 import 'package:furmeet_test/page/home.dart';
 import 'package:furmeet_test/widgets/function.dart';
 import 'package:furmeet_test/widgets/drawer.dart';
-import 'package:furmeet_test/class/users.dart';
+import 'package:furmeet_test/model/users.dart';
 
 class ProfileUpdate extends StatefulWidget {
   @override

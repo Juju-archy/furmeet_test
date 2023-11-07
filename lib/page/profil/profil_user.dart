@@ -89,35 +89,13 @@ class _ProfilUserState extends State<ProfilUSer> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  textWithStyle('Informations', color: Colors.pinkAccent, fontSize: 30.0)
+                  textWithStyle('Biographie', color: Colors.pinkAccent, fontSize: 30.0)
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Expanded(
-                    flex: 4,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        textWithStyle('Ville', color: Colors.pinkAccent),
-                        textWithStyle('Ville', color: Colors.pinkAccent),
-                        textWithStyle('Ville', color: Colors.pinkAccent),
-                        textWithStyle('Ville', color: Colors.pinkAccent),
-                      ],
-                    ),
-                  ),
-                  Expanded(
-                    flex: 6,
-                    child: Column(
-                      children: [
-                        textWithStyle('Toulouse', color: Colors.pinkAccent),
-                        textWithStyle('Toulouse', color: Colors.pinkAccent),
-                        textWithStyle('Toulouse', color: Colors.pinkAccent),
-                        textWithStyle('Toulouse', color: Colors.pinkAccent),
-                      ],
-                    ),
-                  ),
+                  //Faire un champ texte avec retour à la ligne automatique
                 ],
               ),
               padding(20),
