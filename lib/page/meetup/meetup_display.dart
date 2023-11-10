@@ -5,12 +5,12 @@ import 'package:furmeet_test/widgets/function.dart';
 import 'package:furmeet_test/widgets/drawer.dart';
 import 'package:furmeet_test/model/users.dart';
 
-class ProfileUpdate extends StatefulWidget {
+class Meetup extends StatefulWidget {
   @override
-  _ProfileUpdateState createState() => _ProfileUpdateState();
+  _MeetupState createState() => _MeetupState();
 }
 
-class _ProfileUpdateState extends State<ProfileUpdate> {
+class _MeetupState extends State<Meetup> {
   @override
   Widget build (BuildContext context){
     double taille = MediaQuery.of(context).size.width * 0.5;
@@ -20,8 +20,9 @@ class _ProfileUpdateState extends State<ProfileUpdate> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: Text('Modifier profil'),
+          title: Text('Meetup'),
         ),
+        drawer: MyDrawer(),
         body: ListView(
           //https://github.com/JohannesMilke/user_profile_ii_example/blob/master/lib/model/user.dart => utilisation profil
           //padding: EdgeInsets.all(25.0),
@@ -62,20 +63,16 @@ class _ProfileUpdateState extends State<ProfileUpdate> {
             padding(20.0),
             ElevatedButton(
               onPressed: (){
-                setState(() {
-                  Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
-                    return ProfileUpdate();
-                  }));
-                });
+
               },
               child: Text('Modifier',  style: TextStyle(color: Colors.white, fontSize: 20),),
               style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pinkAccent,
-                  fixedSize: const Size(100, 30),
-                  side: const BorderSide(
-                      width: 2,
-                      color: Colors.pink
-                  ),
+                backgroundColor: Colors.pinkAccent,
+                fixedSize: const Size(100, 30),
+                side: const BorderSide(
+                    width: 2,
+                    color: Colors.pink
+                ),
               ),
             ),
           ],

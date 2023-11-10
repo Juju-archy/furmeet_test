@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:furmeet_test/page/home.dart';
+import 'package:furmeet_test/page/meetup/meetup_display.dart';
 
 
 class MyDrawer extends StatelessWidget {
@@ -36,10 +37,9 @@ class MyDrawer extends StatelessWidget {
             title: const Text('Meetup'),
             //selected: _selectedIndex == 1,
             onTap: () {
-            // Update the state of the app
-            //_onItemTapped(1);
-            // Then close the drawer
-              Navigator.pop(context);
+              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                return Meetup();
+              }));
             },
           ),
           ListTile(

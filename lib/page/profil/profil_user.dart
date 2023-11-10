@@ -96,6 +96,14 @@ class _ProfilUserState extends State<ProfilUSer> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   //Faire un champ texte avec retour à la ligne automatique
+                  Text(
+                    'Furry baroudeuse\n'
+                        'J\'aime la cuisine, les voitures, \nla couture, lire',
+                    style: TextStyle(
+                      color: Colors.pinkAccent,
+                      fontSize: 20,
+                    ),
+                  ),
                 ],
               ),
               padding(20),
