@@ -108,6 +108,37 @@ class _MeetupState extends State<Meetup> {
                 ],
               ),
               padding(15.0),
+              Card(
+                elevation: 2.0,
+                shadowColor: Colors.pinkAccent,
+                child: Padding(
+                  padding: EdgeInsets.all(5.0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 6,
+                        child: Column(
+                          children: [
+                            textWithStyle('03/12/2023', color: Colors.pinkAccent),
+                            textWithStyle('16h00 - 00h00', color: Colors.pinkAccent),
+                            padding(5.0),
+                            textWithStyle('1 Avenue Jean Jaurès\n31200 Toulouse', color: Colors.pinkAccent)
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        flex: 4,
+                        child: Column(
+                          children: [
+                            textWithStyle('0.00 €', color: Colors.pinkAccent)
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              padding(10.0),
               //Info
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
