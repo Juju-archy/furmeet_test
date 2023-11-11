@@ -89,12 +89,13 @@ class _ProfilUserState extends State<ProfilUSer> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  textWithStyle('Biographie', color: Colors.pinkAccent, fontSize: 30.0)
+                  textWithStyle('A propos', color: Colors.pinkAccent, fontSize: 30.0)
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+
                   //Faire un champ texte avec retour à la ligne automatique
                   Text(
                     'Furry baroudeuse\n'

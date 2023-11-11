@@ -44,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                padding(20),
+                padding(25),
                 Container(
                   height: taille,
                   width: taille,
@@ -147,13 +147,14 @@ class _LoginPageState extends State<LoginPage> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     TextButton(
+
                         onPressed: (){
                           //Chemin vers mdp oublié
                         },
                         child: Text(
                           'Mot de passe oublié ?',
                           style: TextStyle(color: Colors.pinkAccent, fontSize: 20),
-                        ),
+                        )
                     ),
                   ],
                 )

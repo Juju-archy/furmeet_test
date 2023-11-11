@@ -63,6 +63,7 @@ flutter:
   assets:
   - lib/images/furmeet/logo_furmeet.png
   - lib/images/furmeet/logo_furmeet_icon.png
+  - lib/images/furmeet/furry_test_meetup.jpg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

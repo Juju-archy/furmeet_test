@@ -20,7 +20,7 @@ class _LoginSuccessState extends State<LoginSuccess> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: Text('Connexion réussie !'),
+          title: Text('Connexion'),
         ),
         drawer: MyDrawer(),
         body: SingleChildScrollView(

@@ -20,7 +20,7 @@ class _MeetupState extends State<Meetup> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: Text('Profile Archy'),
+          title: Text('Meetup'),
         ),
         drawer: MyDrawer(),
         body: SingleChildScrollView(
@@ -28,33 +28,45 @@ class _MeetupState extends State<Meetup> {
           child: Column(
             children: [
               Row(
+                //Title
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-
+                  Text(
+                    'Furry Black Light',
+                    style: TextStyle(
+                        color: Colors.pinkAccent,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30.0
+                    ),
                   ),
                 ],
               ),
+              padding(10.0),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                //bannière meetup
                 children: [
                   Expanded(
-                    flex: 6,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        textWithStyle('Archy', color: Colors.pinkAccent, fontSize: 30.0),
-                        textWithStyle('29 ans, Toulouse', color: Colors.pinkAccent, fontSize: 20.0, fontStyle: FontStyle.italic),
-                      ],
+                    child: Container(
+                      height: taille * 0.8,
+                      child: Image.asset(
+                        'lib/images/furmeet/furry_test_meetup.jpg',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
+                ],
+              ),
+              padding(15.0),
+              Row(
+                //Infio ville et créateur de l'event
+                children: [
                   Expanded(
-                    flex: 4,
+                    flex: 3,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Container(
-                          height: taille * 0.7,
+                          height: taille * 0.3,
                           width: taille,
                           decoration: const BoxDecoration(
                               boxShadow: [
@@ -73,207 +85,67 @@ class _MeetupState extends State<Meetup> {
                       ],
                     ),
                   ),
-                ],
-              ),
-              padding(25),
-              //Info
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  textWithStyle('Biographie', color: Colors.pinkAccent, fontSize: 30.0)
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  //Faire un champ texte avec retour à la ligne automatique
-                  Text(
-                    'Furry baroudeuse\n'
-                        'J\'aime la cuisine, les voitures, \nla couture, lire',
-                    style: TextStyle(
-                      color: Colors.pinkAccent,
-                      fontSize: 20,
+                  Expanded(
+                    flex: 7,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.location_on,
+                              color: Colors.pinkAccent,
+                              size: 30.0,
+                            ),
+                            textWithStyle('Toulouse', color: Colors.pinkAccent, fontSize: 25.0, fontStyle: FontStyle.italic),
+                          ],
+                        ),
+                        textWithStyle('Archy', color: Colors.pinkAccent, fontSize: 20.0),
+                      ],
                     ),
                   ),
                 ],
               ),
-              padding(20),
-              textWithStyle('Mes meetups', color: Colors.pinkAccent, fontSize: 30.0),
-              Card(
-                elevation: 10,
-                shadowColor: Colors.pinkAccent,
-                child: SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  child: Column(
-                    children: [
-                      InkWell(
-                        onTap: (){
-
-                        },
-                        child: Card(
-                            elevation: 5,
-                            shadowColor: Colors.red,
-                            child: Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                    flex: 3,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('Archy', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('Toulouse', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    flex: 4,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('14/12/2023', color: Colors.pinkAccent),
-                                        textWithStyle('17h', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            )
-                        ),
+              padding(15.0),
+              //Info
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  textWithStyle('Détails', color: Colors.pinkAccent, fontSize: 30.0)
+                ],
+              ),
+              Container(
+                //Détails
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(
+                      'Furry baroudeuse. \nJ\'aime la cuisine, les voitures, la couture, lire',
+                      style: TextStyle(
+                        color: Colors.pinkAccent,
+                        fontSize: 20,
                       ),
-                      InkWell(
-                        onTap: (){
-
-                        },
-                        child: Card(
-                            elevation: 5,
-                            shadowColor: Colors.red,
-                            child: Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                    flex: 3,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('Archy', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('Toulouse', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    flex: 4,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('14/12/2023', color: Colors.pinkAccent),
-                                        textWithStyle('17h', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            )
-                        ),
-                      ),
-                      InkWell(
-                        onTap: (){
-
-                        },
-                        child: Card(
-                            elevation: 5,
-                            shadowColor: Colors.red,
-                            child: Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                    flex: 3,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('Archy', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('Toulouse', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    flex: 4,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('14/12/2023', color: Colors.pinkAccent),
-                                        textWithStyle('17h', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            )
-                        ),
-                      ),
-                      InkWell(
-                        onTap: (){
-
-                        },
-                        child: Card(
-                            elevation: 5,
-                            shadowColor: Colors.red,
-                            child: Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                    flex: 3,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('Archy', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    flex: 3,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('Toulouse', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                  Expanded(
-                                    flex: 4,
-                                    child: Column(
-                                      children: [
-                                        textWithStyle('14/12/2023', color: Colors.pinkAccent),
-                                        textWithStyle('17h', color: Colors.pinkAccent)
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            )
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              )
+              ),
+              padding(20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  textWithStyle('Participants', color: Colors.pinkAccent, fontSize: 30.0)
+                ],
+              ),
+              Container(
+                //Participants
+                width: MediaQuery.of(context).size.width,
+                child: Column (
+                  children: <Widget>[
+
+                  ],
+                ),
+              ),
             ],
           ),
         ),
