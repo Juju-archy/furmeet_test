@@ -168,12 +168,181 @@ class _MeetupState extends State<Meetup> {
                   textWithStyle('Participants', color: Colors.pinkAccent, fontSize: 30.0)
                 ],
               ),
+              padding(10.0),
               Container(
                 //Participants
-                width: MediaQuery.of(context).size.width,
                 child: Column (
                   children: <Widget>[
-
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          width: taille / 3,
+                          height: taille / 3,
+                          decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pinkAccent,
+                                  blurRadius: 10,
+                                  offset: Offset(4, 9), // Shadow position
+                                ),
+                              ],
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('lib/images/furmeet/logo_furmeet.png'),
+                              )
+                          ),
+                        ),
+                        Container(
+                          width: taille / 3,
+                          height: taille / 3,
+                          decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pinkAccent,
+                                  blurRadius: 10,
+                                  offset: Offset(4, 9), // Shadow position
+                                ),
+                              ],
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('lib/images/furmeet/logo_furmeet.png'),
+                              )
+                          ),
+                        ),
+                        Container(
+                          width: taille / 3 ,
+                          height: taille / 3,
+                          decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pinkAccent,
+                                  blurRadius: 10,
+                                  offset: Offset(4, 9), // Shadow position
+                                ),
+                              ],
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('lib/images/furmeet/logo_furmeet.png'),
+                              )
+                          ),
+                        ),
+                      ],
+                    ),
+                    padding(15.0),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          width: taille / 3,
+                          height: taille / 3,
+                          decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pinkAccent,
+                                  blurRadius: 10,
+                                  offset: Offset(4, 9), // Shadow position
+                                ),
+                              ],
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('lib/images/furmeet/logo_furmeet.png'),
+                              )
+                          ),
+                        ),
+                        Container(
+                          width: taille / 3,
+                          height: taille / 3,
+                          decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pinkAccent,
+                                  blurRadius: 10,
+                                  offset: Offset(4, 9), // Shadow position
+                                ),
+                              ],
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('lib/images/furmeet/logo_furmeet.png'),
+                              )
+                          ),
+                        ),
+                        Container(
+                          width: taille / 3 ,
+                          height: taille / 3,
+                          decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pinkAccent,
+                                  blurRadius: 10,
+                                  offset: Offset(4, 9), // Shadow position
+                                ),
+                              ],
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('lib/images/furmeet/logo_furmeet.png'),
+                              )
+                          ),
+                        ),
+                      ],
+                    ),
+                    padding(15.0),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          width: taille / 3,
+                          height: taille / 3,
+                          decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pinkAccent,
+                                  blurRadius: 10,
+                                  offset: Offset(4, 9), // Shadow position
+                                ),
+                              ],
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('lib/images/furmeet/logo_furmeet.png'),
+                              )
+                          ),
+                        ),
+                        Container(
+                          width: taille / 3,
+                          height: taille / 3,
+                          decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pinkAccent,
+                                  blurRadius: 10,
+                                  offset: Offset(4, 9), // Shadow position
+                                ),
+                              ],
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('lib/images/furmeet/logo_furmeet.png'),
+                              )
+                          ),
+                        ),
+                        Container(
+                          width: taille / 3 ,
+                          height: taille / 3,
+                          decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pinkAccent,
+                                  blurRadius: 10,
+                                  offset: Offset(4, 9), // Shadow position
+                                ),
+                              ],
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('lib/images/furmeet/logo_furmeet.png'),
+                              )
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
