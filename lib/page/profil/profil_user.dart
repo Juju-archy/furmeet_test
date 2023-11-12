@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:furmeet_test/page/home.dart';
 import 'package:furmeet_test/widgets/function.dart';
 import 'package:furmeet_test/widgets/drawer.dart';
 import 'package:furmeet_test/page/profil/profil_modify.dart';

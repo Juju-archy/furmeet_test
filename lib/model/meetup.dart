@@ -7,7 +7,6 @@ class Meetup{
   String? city;
   String? about;
   int? people;
-  bool age = false;
   double? price;
   DateTime? date;
 

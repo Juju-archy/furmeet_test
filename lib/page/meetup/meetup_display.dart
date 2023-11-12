@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:furmeet_test/widgets/profile_widget.dart';
-import 'package:furmeet_test/page/home.dart';
 import 'package:furmeet_test/widgets/function.dart';
 import 'package:furmeet_test/widgets/drawer.dart';
-import 'package:furmeet_test/model/users.dart';
 
 class Meetup extends StatefulWidget {
   @override
@@ -41,7 +38,7 @@ class _MeetupState extends State<Meetup> {
                   ),
                 ],
               ),
-              padding(10.0),
+              padding(15.0),
               Row(
                 //bannière meetup
                 children: [
@@ -79,7 +76,7 @@ class _MeetupState extends State<Meetup> {
                               shape: BoxShape.circle,
                               image: DecorationImage(
                                 image: AssetImage('lib/images/furmeet/logo_furmeet.png'),
-                              )
+                              ),
                           ),
                         ),
                       ],
@@ -152,7 +149,7 @@ class _MeetupState extends State<Meetup> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Text(
-                      'Furry baroudeuse. \nJ\'aime la cuisine, les voitures, la couture, lire',
+                      'Hi les fufus !\nJe vous invite pour une soirée restaurant et bar en centre ville.',
                       style: TextStyle(
                         color: Colors.pinkAccent,
                         fontSize: 20,
@@ -165,7 +162,7 @@ class _MeetupState extends State<Meetup> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  textWithStyle('Participants', color: Colors.pinkAccent, fontSize: 30.0)
+                  textWithStyle('Participants (8)', color: Colors.pinkAccent, fontSize: 30.0)
                 ],
               ),
               padding(10.0),
@@ -291,7 +288,7 @@ class _MeetupState extends State<Meetup> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Container(
-                          width: taille / 3,
+                          width: taille / 2,
                           height: taille / 3,
                           decoration: BoxDecoration(
                               boxShadow: [
@@ -308,24 +305,7 @@ class _MeetupState extends State<Meetup> {
                           ),
                         ),
                         Container(
-                          width: taille / 3,
-                          height: taille / 3,
-                          decoration: BoxDecoration(
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.pinkAccent,
-                                  blurRadius: 10,
-                                  offset: Offset(4, 9), // Shadow position
-                                ),
-                              ],
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('lib/images/furmeet/logo_furmeet.png'),
-                              )
-                          ),
-                        ),
-                        Container(
-                          width: taille / 3 ,
+                          width: taille / 2,
                           height: taille / 3,
                           decoration: BoxDecoration(
                               boxShadow: [
